@@ -1,0 +1,141 @@
+.message__wrap {
+    border: 0.0625rem solid #dbdce4;
+    margin: 0.25rem 0 0 0; }
+  
+  .message {
+    border: 0.0625rem solid #e7eaed;
+    background-color: #fff;
+    display: block;
+    height: 30rem;
+    padding: 1rem;
+    overflow-y: scroll;
+    scroll-behavior: smooth; }
+  
+  .message__left {
+    background: #f9f9fb;
+    border: 0.0625rem solid #e7eaed;
+    border-radius: 0.25rem 0 0.25rem 0.25rem;
+    display: inline-block;
+    float: left;
+    font-size: 0.8125rem;
+    margin: 0.25rem 3rem 0.25rem 0;
+    padding: 0.5rem;
+    position: relative; }
+    .message__left .message__time,
+    .message__left .message__img {
+      right: -2.125rem; }
+    .message__left:before {
+      content: "";
+      width: 0;
+      height: 0;
+      margin-top: -0.0625rem;
+      border-top: 1rem solid #e7eaed;
+      border-right: 0.75rem solid transparent;
+      position: absolute;
+      top: 0;
+      right: -0.75rem; }
+    .message__left:after {
+      content: "";
+      width: 0;
+      height: 0;
+      margin-right: 0.125rem;
+      border-top: 1rem solid #f9f9fb;
+      border-right: 0.75rem solid transparent;
+      position: absolute;
+      top: 0;
+      right: -0.75rem; }
+  
+  .message__right {
+    background: #effcf2;
+    border: 0.0625rem solid #c4f3d0;
+    border-radius: 0 0.25rem 0.25rem 0.25rem;
+    display: inline-block;
+    float: right;
+    font-size: 0.8125rem;
+    margin: 0.25rem 0 0.25rem 3rem;
+    padding: 0.5rem;
+    position: relative; }
+    .message__right .message__time,
+    .message__right .message__img {
+      left: -2.125rem; }
+    .message__right:before {
+      content: "";
+      width: 0;
+      height: 0;
+      margin-top: -0.0625rem;
+      border-top: 1rem solid #c4f3d0;
+      border-left: 0.75rem solid transparent;
+      position: absolute;
+      top: 0;
+      left: -0.75rem; }
+    .message__right:after {
+      content: "";
+      width: 0;
+      height: 0;
+      margin-left: 0.125rem;
+      border-top: 1rem solid #effcf2;
+      border-left: 0.75rem solid transparent;
+      position: absolute;
+      top: 0;
+      left: -0.75rem; }
+  
+  .message__date {
+    clear: both;
+    display: block;
+    padding: 0.5rem;
+    text-align: center; }
+    .message__date span {
+      background: #de6a6c;
+      border-radius: 0.25rem;
+      color: #fff;
+      display: inline-block;
+      font-size: 0.8125rem;
+      padding: 0.5rem; }
+    .message__date:before, .message__date:after {
+      content: "";
+      display: block;
+      clear: both; }
+  
+  .message__time {
+    bottom: 0;
+    color: #cccccc;
+    font-size: 0.625rem;
+    position: absolute; }
+  
+  .message__text {
+    border: 0.0625rem solid #e7eaed;
+    background-color: #fff;
+    display: block;
+    margin: -0.0625rem 0 0 0;
+    padding: 1rem;
+    position: relative; }
+  
+  .message__btn {
+    border: none;
+    background: none;
+    color: #23af47;
+    font-size: 1.5rem;
+    margin-top: -0.875rem;
+    position: absolute;
+    top: 50%;
+    right: 1.125rem;
+    z-index: 1; }
+    .message__btn:focus {
+      outline: none; }
+  
+.message{
+    height: 15rem;
+    margin: 0;
+}
+.message__left, .message__right{
+    word-break: break-all;
+    white-space: pre-line;
+}
+.messageBox{
+    resize: none;
+    min-height: 50px;
+    max-height: 100px;
+}
+.messageBox::-webkit-scrollbar {
+    display: none;
+  }

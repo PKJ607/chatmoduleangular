@@ -1,0 +1,19 @@
+<div class="message__wrap">
+    <div class="message row" (scroll)="scrolled($event)" id="chatBox">
+        <div class="col-12 float-left" *ngFor="let c of chats;">
+            <div
+                [ngClass]="c.type=='date'?'message__date':c.senderId==userData.userId?'message__right':'message__left'">
+                <span *ngIf="c.type=='date'">{{c.date}}</span>
+                {{c.message}}
+                <span *ngIf="c.type!='date'" class="message__time">{{c.time}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="message__text">
+        <textarea type="text" class="form-control form-control-lg pr-5 messageBox" placeholder="Enter message"
+            name="message" [(ngModel)]="message" (keyup)="checkEnter($event)"></textarea>
+        <button type="button" class="message__btn" (click)="sendMessage()">
+            <span class="icon-play-of-right-arrow-triangle-outline"></span>
+        </button>
+    </div>
+</div>
